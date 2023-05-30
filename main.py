@@ -13,7 +13,7 @@ class DrugSeachIn(BaseModel):
     class Config:
         schema_extra = {
             "example": {
-                "drug_query": "What is the side effects of paracetamol ?",
+                "drug_query": "What is the side effects of bactrim ?",
                 "focus": "side_effects, drug_classes",
             }
         }
