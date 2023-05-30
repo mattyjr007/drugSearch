@@ -7,7 +7,7 @@ app = FastAPI()
 
 
 class DrugSeachIn(BaseModel):
-    drug_query: str = Field(example="What is the side effects of paracetamol ?")
+    drug_query: str = Field(example="What is the side effects of bactrim ?")
     focus: str  = Field(default=None, example="side_effects, drug_classes")
 
     class Config:
