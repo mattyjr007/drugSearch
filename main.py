@@ -41,7 +41,7 @@ async def root():
     return {"message": "Hello, Head over to /docs"}
 
 
-@app.get("/adrugsearch", response_model= list[DrugSeachOut], response_model_exclude_unset=True)
+@app.get("/drugsearch", response_model= list[DrugSeachOut], response_model_exclude_unset=True)
 async def drugSearch(drug_query:str, focus: str = None ) -> Any:
     result = DrugPredict.getPrediction(drug_query, focus)  # [{'company_name': drugin.drug_query}]
     return result
