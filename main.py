@@ -43,11 +43,11 @@ async def root():
 
 @app.get("/drugsearch", response_model= list[DrugSeachOut], response_model_exclude_unset=True)
 async def drugSearch(drug_query:str, focus: str = None ) -> Any:
-    result = DrugPredict.getPrediction(drug_query, focus)  # [{'company_name': drugin.drug_query}]
+    result = DrugPredict.getPrediction(drug_query.lower(), focus.lower())  # [{'company_name': drugin.drug_query}]
     return result
 
 
 @app.post("/api/drugsearch", response_model= list[DrugSeachOut], response_model_exclude_unset=True)
 async def drugSearch2(drugin: DrugSeachIn) -> Any:
-    result = DrugPredict.getPrediction(drugin.drug_query, drugin.focus) #[{'company_name': drugin.drug_query}]
+    result = DrugPredict.getPrediction(drugin.drug_query.lower(), drugin.focus.lower()) #[{'company_name': drugin.drug_query}]
     return result
