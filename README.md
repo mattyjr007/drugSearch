@@ -4,7 +4,7 @@ This api provides a drug search system which returns the side effects and some o
 
 Head over to https://sideeffectir.azurewebsites.net/docs to use the api interactively from the browser.
 
-![sample drug search](files/img.png)
+<img src="files/img.png" alt="sample drug search" width="500" height="290" />
 
 To use the API from an api client like postman:
 - API-  https://sideeffectir.azurewebsites.net/api/drugsearch
