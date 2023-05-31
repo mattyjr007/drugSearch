@@ -54,7 +54,7 @@ This notebook contains the methods applied to clean and preprocessing the data f
 
 **Build_model.ipynb**
 
-This notebook contains the methods use to build a entity model.
+This notebook contains the methods use to build a rule based NER model.
 
 
 ### NOTE
