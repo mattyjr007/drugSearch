@@ -12,7 +12,7 @@ To use the API from an api client like postman:
 - Paylod
 ```json
 {
-  "drug_query": "What is the side effects of bactrim ?",
+  "drug_query": "What are the side effects of bactrim ?",
   "focus": "side_effects, drug_classes"
 }
 ```
